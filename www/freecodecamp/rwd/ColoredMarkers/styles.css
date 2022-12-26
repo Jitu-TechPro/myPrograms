@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;    
+}
+
+.marker {    
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+
+.sleeve {
+    background-color: rgba(255, 255, 255, 50%);
+    width: 110px;
+    height: 25px;    
+    /*
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: black;
+    */
+    border-left: 10px double rgba(0, 0, 0, 75%);
+}
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.cap, .sleeve {
+    display: inline-block;
+}
+/* 
+    A gradient is when one color transitions into another. 
+    The CSS linear-gradient function lets you control the direction of the transition along a line, and which colors are used.
+    One thing to remember is that the linear-gradient function actually creates an image element, and is usually paired with the background property which can accept an image as a value.
+*/
+
+.red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+.blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);   
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+
+
+
